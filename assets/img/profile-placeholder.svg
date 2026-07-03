@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Xiaoqiu Yang profile placeholder</title>
+  <desc id="desc">A circular academic profile placeholder with the initials X Y.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071b3a"/>
+      <stop offset="0.55" stop-color="#233f7a"/>
+      <stop offset="1" stop-color="#8c1d40"/>
+    </linearGradient>
+    <radialGradient id="r" cx="0.22" cy="0.18" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" rx="120" fill="url(#g)"/>
+  <rect width="600" height="600" rx="120" fill="url(#r)"/>
+  <circle cx="300" cy="300" r="196" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2"/>
+  <circle cx="300" cy="300" r="148" fill="#ffffff" opacity="0.08"/>
+  <text x="50%" y="52%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="700" fill="#ffffff" letter-spacing="6">XY</text>
+  <text x="50%" y="68%" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="26" fill="#ffffff" opacity="0.86" letter-spacing="3">BIOENGINEERING</text>
+</svg>
