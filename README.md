@@ -25,7 +25,7 @@ This is a static academic personal website prepared for GitHub Pages. It uses on
 
 ## Suggested edits after publishing
 
-- Add links to Google Scholar, LinkedIn, ORCID, or GitHub when available.
+- Add links to LinkedIn, ORCID, or GitHub when available.
 - Replace the CV PDF whenever you update your resume.
 - Review the CV PDF before publishing because public GitHub Pages sites are accessible online.
 
