@@ -1,40 +1,49 @@
 # Xiaoqiu (Shelly) Yang — Academic Website
 
-This is a static academic personal website prepared for GitHub Pages. It uses only HTML, CSS, SVG, and a small inline script for the footer year, so it can be hosted directly from a GitHub repository without a build step.
+This repository powers [shellyyang00-oss.github.io](https://shellyyang00-oss.github.io/). It is a static, no-build academic website made with semantic HTML and responsive CSS.
 
-## Files
+## Site files
 
-- `index.html` — main website content
-- `styles.css` — responsive styling
-- `assets/cv/Xiaoqiu_Yang_Resume.pdf` — downloadable CV/resume
-- `assets/img/profile.jpg` — profile image
-- `assets/img/profile-placeholder.svg` — fallback placeholder profile image
-- `assets/img/favicon.svg` — browser tab icon
-- `.nojekyll` — tells GitHub Pages to serve the files as-is
+- `index.html` — page content, metadata, and the small mobile-navigation script
+- `styles.css` — layout, visual system, responsive styles, and print styles
+- `assets/img/profile.jpg` — profile portrait
+- `assets/img/og.png` — 1200×630 social-sharing image
+- `assets/img/favicon.svg` — browser icon
+- `assets/cv/Xiaoqiu_Yang_Resume.pdf` — downloadable curriculum vitae
+- `robots.txt` and `sitemap.xml` — search-engine discovery files
+- `.nojekyll` — serves the repository directly through GitHub Pages
 
-## How to publish on GitHub Pages
-
-1. Create a new GitHub repository. For a personal site, name it `YOUR-GITHUB-USERNAME.github.io`.
-2. Unzip this package.
-3. Upload all files and folders to the repository root.
-4. Commit the files to the `main` branch.
-5. In GitHub, go to **Settings → Pages**.
-6. Under **Build and deployment**, choose **Deploy from a branch**.
-7. Select the `main` branch and `/root`, then save.
-8. Your site should appear at `https://YOUR-GITHUB-USERNAME.github.io/` after GitHub finishes deploying.
-
-## Suggested edits after publishing
-
-- Add links to LinkedIn, ORCID, or GitHub when available.
-- Replace the CV PDF whenever you update your resume.
-- Review the CV PDF before publishing because public GitHub Pages sites are accessible online.
-
-## Local preview
-
-Open `index.html` in a browser, or run a simple local server from this folder:
+## Clone with GitHub CLI
 
 ```bash
-python3 -m http.server 8000
+gh repo clone shellyyang00-oss/shellyyang00-oss.github.io
+cd shellyyang00-oss.github.io
 ```
 
-Then visit `http://localhost:8000`.
+## Preview locally
+
+```bash
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:8000/`. Check both desktop and mobile widths before merging changes into `main`.
+
+## Preview-first update workflow
+
+```bash
+git switch -c preview/site-update
+# Edit and review the site locally.
+git add index.html styles.css assets README.md
+git commit -m "Refresh academic website"
+git push -u origin preview/site-update
+gh pr create --fill
+```
+
+GitHub Pages deploys from the root of `main`. Merge a reviewed preview pull request only when the content and publication status are confirmed.
+
+## Content maintenance
+
+- Keep publication entries in reverse chronological order.
+- Label each output clearly as `Published`, `Preprint`, or `Under review`.
+- Update the website and CV together when publication titles or statuses change.
+- Verify the CV PDF before publishing because it is publicly accessible.
