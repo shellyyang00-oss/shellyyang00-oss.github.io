@@ -1,0 +1,91 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="340"
+  height="220"
+  viewBox="0 0 340 220"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Cells within an extracellular matrix</title>
+  <desc id="desc">
+    Stylized valve interstitial cells sit among collagen-like fibers,
+    illustrating the extracellular matrix studied in valve remodeling. No
+    quantitative or experimental data are shown.
+  </desc>
+  <defs>
+    <linearGradient id="matrix" x2="1" y2="1">
+      <stop stop-color="#e3e7d8" />
+      <stop offset="1" stop-color="#d0ddc8" />
+    </linearGradient>
+    <linearGradient id="cell" x2="1" y2="1">
+      <stop stop-color="#a8bd96" />
+      <stop offset="1" stop-color="#74936f" />
+    </linearGradient>
+  </defs>
+  <path
+    d="M37 58L225 22L311 88L126 134Z"
+    fill="#e7eadf"
+    stroke="#b2c0a7"
+    stroke-width="1"
+  />
+  <path
+    d="M37 58L126 134V182L37 110Z"
+    fill="#d3ddc9"
+    stroke="#a4b797"
+    stroke-width="1"
+  />
+  <path
+    d="M126 134L311 88V134L126 182Z"
+    fill="url(#matrix)"
+    stroke="#a4b797"
+    stroke-width="1"
+  />
+  <g fill="none" stroke-linecap="round">
+    <g stroke="#a5b693" stroke-width="3.3">
+      <path d="M53 68C96 42 123 82 168 51S230 49 269 63" />
+      <path d="M73 88C119 58 130 98 182 69S237 63 290 78" />
+      <path d="M100 107C145 80 160 113 201 87S250 82 286 87" />
+      <path d="M128 124C167 99 206 115 246 100" />
+      <path
+        d="M137 144Q180 123 222 124T296 110M138 160Q180 139 222 140T296 126"
+      />
+    </g>
+    <g stroke="#c2ceb2" stroke-width="2">
+      <path
+        d="M70 52Q102 93 155 122M107 47Q142 77 186 107M150 40Q178 67 224 105M191 33Q221 59 263 96"
+      />
+      <path d="M52 76q29 35 60 42M53 92q32 34 59 42M57 110q26 30 54 37" />
+    </g>
+  </g>
+  <g fill="url(#cell)" stroke="#617e58" stroke-width="1.2">
+    <path d="M90 62Q129 52 149 69L176 75L146 81Q125 95 110 75Z" />
+    <path d="M168 93Q196 77 220 89L245 94L218 103Q201 114 185 101Z" />
+    <path d="M178 142Q199 131 218 137L242 135L222 145Q203 157 189 147Z" />
+  </g>
+  <g fill="#557a58" opacity=".8">
+    <ellipse cx="130" cy="72" rx="9" ry="4" transform="rotate(9 130 72)" />
+    <ellipse cx="206" cy="95" rx="8" ry="3.5" transform="rotate(-5 206 95)" />
+    <ellipse cx="207" cy="143" rx="8" ry="3" transform="rotate(-12 207 143)" />
+  </g>
+  <path
+    d="M217 33L239 9H305M245 140L269 173H319"
+    stroke="#8b9c7e"
+    stroke-width=".8"
+    fill="none"
+  />
+  <g fill="#5f7555" font-family="Arial,sans-serif" font-size="10">
+    <text x="245" y="7">MATRIX FIBERS</text>
+    <text x="246" y="185">VALVE CELLS</text>
+  </g>
+  <text
+    x="170"
+    y="209"
+    text-anchor="middle"
+    fill="#536748"
+    font-family="Arial,sans-serif"
+    font-size="11"
+    letter-spacing="1.5"
+  >
+    EXTRACELLULAR SCALE
+  </text>
+</svg>
