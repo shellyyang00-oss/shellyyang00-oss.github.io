@@ -20,7 +20,7 @@ PAGES = [
 PERSON = {
     "@context": "https://schema.org", "@type": "Person",
     "name": "Xiaoqiu Yang", "alternateName": "Shelly Yang", "url": BASE,
-    "image": BASE + "assets/img/profile.jpg", "email": "mailto:xiaoqiuy@seas.upenn.edu",
+    "image": BASE + "assets/img/profile.jpg", "email": "mailto:xiaoqiuy@engineering.upenn.edu",
     "sameAs": ["https://scholar.google.com/citations?hl=en&user=ShQ3XMwAAAAJ"],
     "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Pennsylvania"},
     "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Boston University"}],
@@ -65,6 +65,7 @@ def render(page):
   <meta name="twitter:description" content="{html.escape(description)}">
   <meta name="twitter:image" content="{BASE}assets/img/og.png">
   <link rel="icon" href="{prefix}assets/img/favicon.svg" type="image/svg+xml">
+  <script src="{prefix}assets/theme.js"></script>
   <link rel="stylesheet" href="{prefix}styles.css">
   <script src="{prefix}assets/site.js" defer></script>
 {structured}
@@ -75,7 +76,11 @@ def render(page):
     <div class="container masthead">
       <a class="brand" href="{prefix}index.html" aria-label="Xiaoqiu Yang, About"><span class="brand-mark" aria-hidden="true">XY</span><span class="brand-name">Xiaoqiu Yang</span></a>
       <div class="masthead-links">
-        <a class="desktop-link" href="mailto:xiaoqiuy@seas.upenn.edu">Email <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" data-theme-toggle hidden aria-label="Color theme: automatic. Switch to light.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" stroke="none"/></svg>
+          <span data-theme-label>Auto</span>
+        </button>
+        <a class="desktop-link" href="mailto:xiaoqiuy@engineering.upenn.edu">Email <span aria-hidden="true">↗</span></a>
         <a class="desktop-link" href="{SCHOLAR}">Google Scholar <span aria-hidden="true">↗</span></a>
         <a class="cv-link" href="{prefix}assets/cv/Xiaoqiu_Yang_Resume.pdf">CV <span aria-hidden="true">↗</span></a>
       </div>
@@ -93,7 +98,7 @@ def render(page):
 '''
     assets = [ROOT / "styles.css", *(ROOT / "assets").rglob("*")]
     for asset in assets:
-        if asset.is_file() and asset.suffix in {".css", ".js", ".jpg", ".png", ".svg"}:
+        if asset.is_file() and asset.suffix in {".css", ".js", ".jpg", ".png", ".svg", ".pdf"}:
             name = asset.relative_to(ROOT).as_posix()
             version = hashlib.sha256(asset.read_bytes()).hexdigest()[:12]
             markup = markup.replace(name + '"', name + "?v=" + version + '"')
