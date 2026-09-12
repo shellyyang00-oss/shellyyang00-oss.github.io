@@ -60,19 +60,21 @@
     <circle cx="72" cy="151" r="2.7" />
   </g>
   <text
+    font-weight="600"
     x="106"
     y="41"
     font-family="Arial,sans-serif"
     font-size="12"
-    fill="#795b32"
+    fill="#254533"
   >
     Ca²⁺
   </text>
   <text
+    font-weight="600"
     x="90"
     y="20"
     text-anchor="middle"
-    fill="#456b55"
+    fill="#254533"
     font-family="Arial,sans-serif"
     font-size="12"
     letter-spacing=".5"
@@ -98,10 +100,11 @@
     <circle cx="270" cy="39" r="3" />
   </g>
   <text
+    font-weight="600"
     x="190"
     y="20"
     text-anchor="middle"
-    fill="#806853"
+    fill="#254533"
     font-family="Arial,sans-serif"
     font-size="12"
   >
@@ -119,20 +122,22 @@
     marker-end="url(#arrow)"
   />
   <text
+    font-weight="600"
     x="266"
     y="20"
     text-anchor="middle"
-    fill="#456b55"
+    fill="#254533"
     font-family="Arial,sans-serif"
     font-size="12"
   >
     HTR2B
   </text>
   <text
+    font-weight="600"
     x="258"
     y="64"
     text-anchor="middle"
-    fill="#8e7159"
+    fill="#254533"
     font-family="Arial,sans-serif"
     font-size="10"
   >
@@ -154,10 +159,11 @@
     fill="none"
   />
   <text
+    font-weight="600"
     x="169"
     y="209"
     text-anchor="middle"
-    fill="#536748"
+    fill="#254533"
     font-family="Arial,sans-serif"
     font-size="11"
     letter-spacing="1.5"

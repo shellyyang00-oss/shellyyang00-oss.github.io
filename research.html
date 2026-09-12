@@ -23,7 +23,8 @@
   <meta name="twitter:description" content="Research on PIEZO1, serotonin signaling, and extracellular matrix remodeling in human mitral valve cells at the University of Pennsylvania.">
   <meta name="twitter:image" content="https://shellyyang00-oss.github.io/assets/img/og.png?v=c508897e6bb9">
   <link rel="icon" href="assets/img/favicon.svg?v=8502e0e77057" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=0cdd35678b87">
+  <script src="assets/theme.js?v=bc20406345b5"></script>
+  <link rel="stylesheet" href="styles.css?v=f6bdb706503c">
   <script src="assets/site.js?v=75671ed9fac6" defer></script>
 
 </head>
@@ -33,9 +34,13 @@
     <div class="container masthead">
       <a class="brand" href="index.html" aria-label="Xiaoqiu Yang, About"><span class="brand-mark" aria-hidden="true">XY</span><span class="brand-name">Xiaoqiu Yang</span></a>
       <div class="masthead-links">
-        <a class="desktop-link" href="mailto:xiaoqiuy@seas.upenn.edu">Email <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" data-theme-toggle hidden aria-label="Color theme: automatic. Switch to light.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" stroke="none"/></svg>
+          <span data-theme-label>Auto</span>
+        </button>
+        <a class="desktop-link" href="mailto:xiaoqiuy@engineering.upenn.edu">Email <span aria-hidden="true">↗</span></a>
         <a class="desktop-link" href="https://scholar.google.com/citations?hl=en&amp;user=ShQ3XMwAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a>
-        <a class="cv-link" href="assets/cv/Xiaoqiu_Yang_Resume.pdf">CV <span aria-hidden="true">↗</span></a>
+        <a class="cv-link" href="assets/cv/Xiaoqiu_Yang_Resume.pdf?v=9a6de15e4424">CV <span aria-hidden="true">↗</span></a>
       </div>
     </div>
     <div class="nav-wrap"><nav class="container page-nav" aria-label="Main navigation">
@@ -52,9 +57,17 @@
     <p class="eyebrow">Research</p>
     <h1>How do forces shape<br />heart valve disease?</h1>
     <p class="page-intro">
-      I investigate how mechanical cues affect human mitral valve cells, with a
-      focus on PIEZO1, serotonin transport, and the signaling pathways involved
-      in extracellular matrix remodeling.
+      My research investigates how mechanical forces alter serotonin signaling
+      and extracellular matrix remodeling in mitral regurgitation. I focus on
+      the mechanosensitive channel PIEZO1, the serotonin transporter
+      (SERT/SLC6A4), and serotonin receptor 2B (HTR2B) in human mitral valve
+      cells.
+    </p>
+    <p class="research-summary-methods">
+      I combine controlled mechanical stimulation with gene perturbation and
+      molecular assays in human valve endothelial and interstitial cells. These
+      experiments test how force sensing changes serotonin regulation and the
+      cellular programs involved in matrix remodeling.
     </p>
   </header>
   <figure
@@ -69,7 +82,7 @@
     <ol class="framework">
       <li>
         <img
-          src="assets/figures/valve-mechanics.svg?v=4a975cbb7d95"
+          src="assets/figures/valve-mechanics.svg?v=7b21465e278f"
           alt="Conceptual mitral valve leaflets under mechanical force"
           width="340"
           height="220"
@@ -77,13 +90,13 @@
         <span class="step">01 / MECHANICS</span>
         <h3>The mechanical environment</h3>
         <p>
-          Controlled mechanical stimulation helps us study how valve cells
-          respond to changes in their physical environment.
+          Human valve endothelial and interstitial cell models allow me to
+          compare responses under controlled mechanical stimulation.
         </p>
       </li>
       <li>
         <img
-          src="assets/figures/cell-signaling.svg?v=b96e822265ab"
+          src="assets/figures/cell-signaling.svg?v=e9c4b652a480"
           alt="Schematic PIEZO1 channel, serotonin transporter SERT, and HTR2B receptor in a cell membrane"
           width="340"
           height="220"
@@ -91,13 +104,13 @@
         <span class="step">02 / SIGNALING</span>
         <h3>The cellular response</h3>
         <p>
-          I examine force sensing through PIEZO1 alongside serotonin transport
-          and serotonin receptor 2B (HTR2B) signaling.
+          Gene perturbation and molecular assays help me test how PIEZO1
+          activity affects serotonin transport and HTR2B signaling.
         </p>
       </li>
       <li>
         <img
-          src="assets/figures/matrix-remodeling.svg?v=83436c019b34"
+          src="assets/figures/matrix-remodeling.svg?v=961443c35d7f"
           alt="Schematic valve interstitial cells surrounded by extracellular matrix fibers"
           width="340"
           height="220"
@@ -105,8 +118,8 @@
         <span class="step">03 / REMODELING</span>
         <h3>Changes in the matrix</h3>
         <p>
-          Molecular assays connect these cellular responses with the programs
-          that regulate the extracellular matrix.
+          I examine changes in gene and protein expression to connect cellular
+          signaling with extracellular matrix remodeling.
         </p>
       </li>
     </ol>
@@ -125,11 +138,12 @@
     <div class="research-topics">
       <article class="research-topic">
         <p class="eyebrow">Valve cell mechanobiology</p>
-        <h3>How do valve cells respond to altered mechanics?</h3>
+        <h3>How does mechanical stimulation change valve cell behavior?</h3>
         <p>
-          I use human mitral valve endothelial and interstitial cells to compare
-          responses under controlled mechanical conditions. These models allow
-          me to study the cellular changes associated with mitral regurgitation.
+          I use human mitral valve endothelial cells (MVECs) and interstitial
+          cells (MVICs) to study responses to mechanical stimulation. Comparing
+          these responses helps identify cellular changes associated with mitral
+          regurgitation.
         </p>
         <div class="method-list" aria-label="Methods">
           <span>Primary cell culture</span><span>MVECs &amp; MVICs</span
@@ -138,11 +152,11 @@
       </article>
       <article class="research-topic">
         <p class="eyebrow">PIEZO1 and serotonin</p>
-        <h3>How does force sensing affect cell signaling?</h3>
+        <h3>How does PIEZO1 activity affect serotonin regulation?</h3>
         <p>
-          I combine gene perturbation with molecular assays to examine the
-          relationships among PIEZO1 activity, serotonin transport, HTR2B
-          signaling, and matrix remodeling.
+          I combine siRNA knockdown with RNA and protein assays to test how
+          PIEZO1 activity relates to SERT/SLC6A4 and HTR2B. I then examine how
+          changes in serotonin regulation relate to matrix remodeling.
         </p>
         <div class="method-list" aria-label="Methods">
           <span>siRNA knockdown</span><span>RT-qPCR</span
@@ -171,6 +185,6 @@
 </div>
 
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><p>© <span data-year>2026</span> Xiaoqiu (Shelly) Yang</p><div class="footer-links"><a href="contact.html">Contact</a><a href="https://scholar.google.com/citations?hl=en&amp;user=ShQ3XMwAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="assets/cv/Xiaoqiu_Yang_Resume.pdf">Curriculum vitae <span aria-hidden="true">↗</span></a></div></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span data-year>2026</span> Xiaoqiu (Shelly) Yang</p><div class="footer-links"><a href="contact.html">Contact</a><a href="https://scholar.google.com/citations?hl=en&amp;user=ShQ3XMwAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="assets/cv/Xiaoqiu_Yang_Resume.pdf?v=9a6de15e4424">Curriculum vitae <span aria-hidden="true">↗</span></a></div></div></footer>
 </body>
 </html>

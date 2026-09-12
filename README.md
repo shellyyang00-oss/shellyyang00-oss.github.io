@@ -4,6 +4,8 @@ Source for [shellyyang00-oss.github.io](https://shellyyang00-oss.github.io/), ho
 
 The site has five independently addressable pages: About, Research, Publications, Experience, and Contact. Tab navigation, CV links, publication summaries, and citation downloads work without JavaScript. A small script updates the copyright year and redirects legacy homepage fragment links to their new pages.
 
+The color theme defaults to Auto, following the visitor's device appearance and changing with it. The header control cycles through Auto, Light, and Dark; a manual choice persists across pages and visits. Automatic appearance also works without JavaScript. Print styles always use a light background.
+
 ## Editing content
 
 - `content/about.html`: biography and recent publication highlight
@@ -13,6 +15,7 @@ The site has five independently addressable pages: About, Research, Publications
 - `content/contact.html`: professional contact details
 - `scripts/build.py`: shared page structure, metadata, navigation, and sitemap
 - `styles.css`: responsive layout, typography, and print styles
+- `assets/theme.js`: early theme selection, saved preferences, and theme control
 - `assets/figures/`: original, editable SVG research illustrations
 - `assets/img/profile.jpg`: portrait prepared for the web
 - `assets/img/og.png`: social sharing image
@@ -28,6 +31,7 @@ python3 scripts/build.py
 python3 scripts/build.py --check
 python3 scripts/check_site.py
 node --check assets/site.js
+node --check assets/theme.js
 ```
 
 To preview:
@@ -36,7 +40,7 @@ To preview:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8000/`. Check desktop and phone layouts, navigation, and research figures before publishing.
+Open `http://127.0.0.1:8000/`. Check desktop and phone layouts, navigation, and research figures in both color themes before publishing. Confirm that Auto follows device appearance and that manual choices persist after navigation or reload.
 
 The optional `scripts/render-social.cjs` renders the social card using Node.js and the `sharp` package. It is not needed to build or serve the website.
 
