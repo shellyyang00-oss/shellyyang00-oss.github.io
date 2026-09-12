@@ -21,6 +21,8 @@ The site has five independently addressable pages: About, Research, Publications
 
 After editing content or the shared layout, regenerate the committed HTML with Python 3. The generator uses only the standard library; GitHub Pages serves the generated files directly.
 
+The generator versions asset URLs from their file contents, so updated styles and images load correctly for returning visitors.
+
 ```sh
 python3 scripts/build.py
 python3 scripts/build.py --check
