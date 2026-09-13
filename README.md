@@ -48,7 +48,7 @@ The optional `scripts/render-social.cjs` renders the social card using Node.js a
 
 Keep publication titles and author order consistent with publisher records. The 2026 Cardiovascular Research paper is published online as an accepted manuscript; its DOI is [10.1093/cvr/cvag190](https://doi.org/10.1093/cvr/cvag190). The 2023 and 2022 entries use [10.1161/ATVBAHA.123.319145](https://doi.org/10.1161/ATVBAHA.123.319145) and [10.1016/j.isci.2022.105390](https://doi.org/10.1016/j.isci.2022.105390).
 
-The separate manuscript entry records the status supplied in 2025. Confirm its identity and current status before combining it with another paper or changing its publication category. The CV is a separately maintained PDF.
+The former 2025 under-review manuscript entry refers to the 2026 Cardiovascular Research publication. Use the published record rather than adding a separate manuscript entry. The CV is a separately maintained PDF.
 
 Research illustrations show a conceptual framework, not experimental data or a complete causal pathway. Preserve the schematic captions when editing the figures.
 
